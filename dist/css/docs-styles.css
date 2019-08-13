@@ -1,0 +1,36 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  padding-left: 50px;
+  margin: auto;
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  background-color: #262626;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 750px) {
+  code {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

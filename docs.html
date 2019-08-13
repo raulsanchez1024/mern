@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/docs-styles.css" />
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
+    <div class="is-boxed has-animations">
+      <div class="body-wrap">
+        <nav>
+          <div class="left">
+            <a class="button button-primary" href="index.html">Go Back</a>
+          </div>
+          <div class="right">
+            <a class="button" href="#">Downloand</a>
+          </div>
+        </nav>
+        <div class="title">
+          <h3>DOCS</h3>
+        </div>
+        <div class="content">
+          <h4>Getting Started</h4>
+          <p>1. Download or clone the repository</p>
+          <code>
+            >> git clone REPO
+          </code>
+          <p>2. Install all dependancies</p>
+          <code>
+            >> cd mernstarter/app/templates/ <br />
+            >> npm i <br />
+            >> cd mernstarter/app/templates/client <br />
+            >> npm i <br />
+          </code>
+          <p>3. Replace MongoURI & SecretKey</p>
+          <code>
+            module.exports = { <br />
+              &nbsp; mongoURI:"<MONGOURI-HERE>", <br />
+              &nbsp; secretOrKey: "<SECRETKEY-HERE>" <br />
+            }; <br />
+
+          E.G., <br />
+          module.exports = { <br />
+            &nbsp; mongoURI: "mongodb://raul:123456S@ds12fd234234892.mlab.com:25892/mernstarter", <br />
+            &nbsp; secretOrKey: "wussgooodddd" <br />
+          }; <br />
+          </code>
+          <p>4. Start the application</p>
+          <code>
+            >> npm i
+          </code>
+          <h4>Heroku Deployment</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
