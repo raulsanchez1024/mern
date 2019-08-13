@@ -16,6 +16,7 @@ nav {
   width: 80vw;
   padding-left: 50px;
   margin: auto;
+  word-wrap: inherit;
 }
 
 p {
@@ -24,13 +25,15 @@ p {
 
 code {
   background-color: #262626;
+  border-radius: 30px;
+  padding-left: 25px;
   margin-top: 0;
   margin-bottom: 20px;
+  word-wrap: break-word;
 }
 
 @media only screen and (max-width: 750px) {
   code {
-    display: flex;
-    flex-wrap: wrap;
+    word-wrap: break-word;
   }
 }
