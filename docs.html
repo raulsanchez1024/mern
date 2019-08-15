@@ -76,6 +76,17 @@
             >> git push heroku master <br />
             >> heroku open
           </code>
+          <h4>React Custom Components</h4>
+          <h6>&lt;PrivateRoute /&gt;</h6>
+          <p>This component will be used in the <strong>App.js</strong> file when using routes. Simply
+            use this route with any route you want to be protected. Pass the component name
+            as props.
+          </p>
+          <code>
+            &lt;Switch&gt; <br />
+                &nbsp;&lt;PrivateRoute path="/dashboard" exact component={Dashboard} /&gt; <br />
+              &lt;/Switch&gt;
+          </code>
         </div>
       </div>
     </div>
