@@ -34,11 +34,15 @@
           <code>
             >> git clone git@github.com:raulsanchez1024/generator-MERN.git
           </code>
-          <p>2. Install all dependancies</p>
+          <p>2. Pull templates folder out of mernstarter</p>
+          <p>3. Git Initi</p>
           <code>
-            >> cd mernstarter/app/templates/ <br />
+            >> git init
+          </code>
+          <p>3. Install all dependancies</p>
+          <code>
             >> npm i <br />
-            >> cd mernstarter/app/templates/client <br />
+            >> cd frontend <br />
             >> npm i <br />
           </code>
           <p>3. Replace MongoURI & SecretKey</p>
@@ -54,9 +58,8 @@
             &nbsp; secretOrKey: "wussgooodddd" <br />
           }; <br />
           </code>
-          <p>4. Start the application</p>
+          <p>4. Start the application from templates folder</p>
           <code>
-            >> cd mernstarter/app/templates/ <br />
             >> npm run dev
           </code>
           <h4>Heroku Deployment</h4>
@@ -65,10 +68,11 @@
           <code>
             >> heroku create
           </code>
-          <p>3. Push to git</p>
           <p>4. Add to Heroku</p>
           <code>
-            >> heroku git:remote -a HEROKU-PROJECT-NAME <br />
+            >> heroku git:remote -a HEROKU-APP-NAME <br />
+            >> git add . <br />
+            >> git commit -am "make it better" <br />
             >> git push heroku master <br />
             >> heroku open
           </code>
